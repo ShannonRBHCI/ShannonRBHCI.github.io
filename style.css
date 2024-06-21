@@ -7,13 +7,26 @@ body {
 }
 
 header {
-    background: #4CAF50;
+    position: relative;
+    height: 300px; /* Adjust height as needed */
+    background: url('path/to/your/image.jpg') no-repeat center center/cover; /* Update with your image path */
     color: white;
-    padding: 1em 0;
     text-align: center;
 }
 
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    z-index: 1;
+}
+
 header nav {
+    position: relative;
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,8 +70,12 @@ header nav ul li a {
 }
 
 .header-content {
+    position: relative;
+    z-index: 2;
     margin: 2em 0;
 }
+
+/* Rest of your existing styles */
 
 main {
     padding: 2em;
