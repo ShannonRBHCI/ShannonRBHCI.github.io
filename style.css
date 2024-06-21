@@ -196,3 +196,22 @@ footer h2 {
 .project-item:hover .project-text {
     color: #ffcc00;
 }
+
+.scholar-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4285F4; /* Google Scholar blue */
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.scholar-button:hover {
+    background-color: #357ae8;
+}
+
