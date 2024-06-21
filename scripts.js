@@ -11,6 +11,17 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelector(".intro p").innerText = greeting + " Hi, I'm [Your Name], a PhD student in Human-Computer Interaction.";
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Page Loaded');
+
+    // Responsive Navigation
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        burger.classList.toggle('toggle');
+    });
+});
 
 
 document.addEventListener('DOMContentLoaded', function() {
