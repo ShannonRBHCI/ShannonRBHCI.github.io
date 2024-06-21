@@ -39,10 +39,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Responsive Navigation
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Page Loaded');
+
+    // Responsive Navigation
     const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
+    const nav = document.querySelector('nav ul');
     burger.addEventListener('click', () => {
         nav.classList.toggle('active');
         burger.classList.toggle('toggle');
     });
 });
+
