@@ -84,15 +84,30 @@ footer h2 {
     margin-top: 0;
 }
 
+.social-media {
+    margin-top: 1em;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #4CAF50;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
-    .nav-links {
+    header nav ul {
         display: none;
         flex-direction: column;
         width: 100%;
     }
 
-    .nav-links.active {
+    header nav ul.active {
         display: flex;
     }
 
@@ -113,17 +128,10 @@ footer h2 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-
-
-
-
-
-
 .intro, .about, .projects, .publications {
     max-width: 800px;
     margin: 0 auto;
 }
-
 
 .projects {
     max-width: 1000px;
@@ -171,14 +179,3 @@ footer h2 {
 .project-item:hover .project-text {
     color: #ffcc00;
 }
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
