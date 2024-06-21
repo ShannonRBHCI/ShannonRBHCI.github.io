@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     } else {
         greeting = "Good evening!";
     }
-    document.querySelector(".intro p").innerText = greeting + " Hi, I'm [Your Name], a PhD student in Human-Computer Interaction.";
+    document.querySelector(".intro p").innerText = greeting + " Hi, I'm Shannon, a PhD student in Human-Computer Interaction at Queensland University of Technology.";
 });
 
 document.addEventListener('DOMContentLoaded', function() {
