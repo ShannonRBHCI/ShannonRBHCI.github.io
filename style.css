@@ -4,7 +4,6 @@ body {
     padding: 0;
     background-color: #f5f5f5;
     color: #333;
-    scroll-behavior: smooth;
 }
 
 header {
@@ -46,6 +45,7 @@ header nav ul li a {
 .burger {
     display: none;
     cursor: pointer;
+    flex-direction: column;
 }
 
 .burger div {
@@ -97,9 +97,22 @@ footer h2 {
     }
 
     .burger {
-        display: block;
+        display: flex;
     }
 }
+
+.burger.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger.toggle .line2 {
+    opacity: 0;
+}
+
+.burger.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
 
 
 
