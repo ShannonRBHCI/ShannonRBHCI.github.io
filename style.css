@@ -34,7 +34,7 @@ header nav ul li a {
 
 #index-header {
     position: relative;
-    height: 400px; /* Adjust height as needed */
+    height: 300px; /* Adjust height as needed */
     background: url('assets/mygarden.jpeg') no-repeat center center/cover; /* Update with your image path */
     color: white;
     text-align: center;
@@ -244,7 +244,7 @@ footer p {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }
 
@@ -254,6 +254,7 @@ footer p {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    text-align: center;
 }
 
 .project-item img {
