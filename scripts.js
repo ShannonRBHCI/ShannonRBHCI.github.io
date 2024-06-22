@@ -51,3 +51,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+    //popup for cv
+function openCVPopup() {
+    document.getElementById("cvModal").style.display = "flex";
+}
+
+function closeCVPopup() {
+    document.getElementById("cvModal").style.display = "none";
+}
+
+// Close the modal if the user clicks outside of the modal content
+window.onclick = function(event) {
+    var modal = document.getElementById("cvModal");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
